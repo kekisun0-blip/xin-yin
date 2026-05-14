@@ -26,8 +26,7 @@ function devNoCachePlugin(): Plugin {
 
 export default defineConfig({
   appType: "spa",
-  /** GitHub Pages 项目站：https://<user>.github.io/xin-yin-ce/ */
-  base: process.env.GITHUB_PAGES === "true" ? "/xin-yin-ce/" : "/",
+  base: process.env.GITHUB_PAGES === "true" ? "/xin-yin/" : "/",
   plugins: [react(), tailwindcss(), devNoCachePlugin()],
   server: {
     port: 5174,
